@@ -6,7 +6,7 @@ export const friendsWishes = [
   {
     id: 1,
     name: "Ayushi 🌸",
-    message: "Happy Birthday dearest Uma! You bring so much light, positivity, and sweetness into all our lives. Hope this year brings you infinite smiles, success, and everything your heart desires!",
+    message: "Happiest birthday Best friend. You came into my life when it was least expected and I never thought we'll have that enemies to best friends trope. I'll always be thankful to all powers that made us meet. This journey has been easier with you as my friend. To have someone to fall back upon, we're basically soul sisters now. And with the kind heart you have, I know God will forever shower you with love. Wishing you all the happiness.",
     photoUrl: "/images/ayushi.jpeg",
     videoUrl: ""
   },

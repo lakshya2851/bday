@@ -63,3 +63,18 @@ export const surprisePhotos = [
     caption: "Happy Birthday, Uma! Always & forever ❤️"
   }
 ];
+
+export const surpriseReels = [
+  {
+    id: 201,
+    url: "/images/surprise-reel1.mp4",
+    title: "Special Moment Reel 🎬✨",
+    caption: "A little video memory made just for you ❤️"
+  },
+  {
+    id: 202,
+    url: "/images/surprise-reel2.mp4",
+    title: "Our Story Reel 🎥💖",
+    caption: "Every frame full of love and laughter"
+  }
+];
