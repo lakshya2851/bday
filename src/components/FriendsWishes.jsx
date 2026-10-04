@@ -70,32 +70,32 @@ export default function FriendsWishes() {
         </div>
 
         {/* Sticky Notes Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {friendsWishes.map((item, idx) => {
             const bgStyle = bgStyles[idx % bgStyles.length];
             return (
               <div
                 key={item.id || idx}
-                className={`sticky-note relative p-6 rounded-2xl shadow-md border ${bgStyle} hover:scale-105 transition-transform duration-300 flex flex-col justify-between`}
+                className={`sticky-note relative p-6 sm:p-8 rounded-2xl shadow-md border ${bgStyle} hover:scale-[1.02] transition-transform duration-300 flex flex-col justify-between`}
               >
                 {/* Decorative Pin / Tape */}
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-5 bg-rose/20 border border-burgundy/10 rounded-xs transform rotate-1 opacity-75" />
 
                 <div>
-                  {/* Photo or Video if available */}
+                  {/* Photo framed perfectly for horizontal / landscape friend photos */}
                   {item.photoUrl && (
-                    <div className="mb-4 rounded-xl overflow-hidden aspect-video bg-white/50 border border-burgundy/10">
+                    <div className="mb-6 rounded-xl overflow-hidden aspect-[4/3] max-h-72 w-full bg-white/60 border border-burgundy/10 shadow-inner flex items-center justify-center">
                       <img
                         src={item.photoUrl}
                         alt={`Wish photo from ${item.name}`}
                         loading="lazy"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
                       />
                     </div>
                   )}
 
                   {item.videoUrl && (
-                    <div className="mb-4 rounded-xl overflow-hidden aspect-video bg-black/10">
+                    <div className="mb-6 rounded-xl overflow-hidden aspect-video bg-black/10">
                       <iframe
                         src={item.videoUrl}
                         title={`Video wish from ${item.name}`}
@@ -105,13 +105,13 @@ export default function FriendsWishes() {
                     </div>
                   )}
 
-                  <p className="font-handwriting text-lg text-burgundy/90 leading-relaxed mb-6">
+                  <p className="font-handwriting text-lg sm:text-xl text-burgundy/90 leading-relaxed whitespace-pre-line mb-6">
                     "{item.message}"
                   </p>
                 </div>
 
                 <div className="pt-3 border-t border-burgundy/10 flex items-center justify-between">
-                  <span className="font-serif font-bold text-burgundy text-base">
+                  <span className="font-serif font-bold text-burgundy text-base sm:text-lg">
                     — {item.name}
                   </span>
                   <span className="text-base">🎈</span>

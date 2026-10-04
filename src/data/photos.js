@@ -1,17 +1,17 @@
 // ✏️ EDIT HERE: Photo Memories and Polaroid Gallery
-// Configured with your custom media assets matching each placeholder!
+// Configured with high-performance WebP media assets!
 
 export const photoMemories = [
   {
     id: 1,
-    url: "/images/uma-smile.jpg",
+    url: "/images/uma-smile.webp",
     caption: "That unforgettable smile ❤️",
     rotation: "-5deg",
     alt: "Uma's bright smile"
   },
   {
     id: 2,
-    url: "/images/coffee-date.jpg",
+    url: "/images/coffee-date.webp",
     caption: "Coffee dates & long talks ☕",
     rotation: "4deg",
     alt: "Coffee date memory"
@@ -25,7 +25,7 @@ export const photoMemories = [
   },
   {
     id: 4,
-    url: "/images/cozy-spot.jpg",
+    url: "/images/cozy-spot.webp",
     caption: "Your favorite cozy spot ✨",
     rotation: "6deg",
     alt: "Favorite cozy spot"
@@ -39,7 +39,7 @@ export const photoMemories = [
   },
   {
     id: 6,
-    url: "/images/precious-day.jpg",
+    url: "/images/precious-day.webp",
     caption: "A precious day we shared 🌸",
     rotation: "5deg",
     alt: "Precious shared day"
@@ -49,17 +49,17 @@ export const photoMemories = [
 export const surprisePhotos = [
   {
     id: 101,
-    url: "/images/uma-smile.jpg",
+    url: "/images/uma-smile.webp",
     caption: "Here's to every smile you bring into my world 💖"
   },
   {
     id: 102,
-    url: "/images/cozy-spot.jpg",
+    url: "/images/cozy-spot.webp",
     caption: "To the brightest star in my sky ✨"
   },
   {
     id: 103,
-    url: "/images/precious-day.jpg",
+    url: "/images/precious-day.webp",
     caption: "Happy Birthday, Uma! Always & forever ❤️"
   }
 ];
